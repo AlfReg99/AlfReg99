@@ -1,0 +1,59 @@
+name: oracle-mysql-ee-5.7-cis-baseline
+title: oracle-mysql-ee-5.7-cis-baseline
+maintainer: MITRE InSpec Team
+copyright: The MITRE Corporation, 2021
+copyright_email: .
+summary: "InSpec Validation Profile for Oracle MySQL Server Enterprise Edition 5.7 CIS"
+license: Apache-2.0
+Description: An InSpec Compliance Profile. 
+version: 1.10.1
+inspec_version: ">= 4.0"
+
+inputs:
+  - name: user
+    description: 'username MySQL DB Server'
+    type: string
+    value: ''
+    sensitive: true
+
+  - name: password
+    description: 'password MySQL DB Server'
+    type: string
+    value: ''
+    sensitive: true
+
+  - name: host
+    description: 'hostname of MySQL DB Server'
+    value: ''
+    sensitive: true
+
+  - name: port
+    description: 'port MySQL DB Server'
+    type: numeric
+    value: 3306
+
+  - name: approved_mysql_version
+    description: 'approved version expected to be installed'
+    type: string
+    value: '5.7.31'
+
+  - name: mysql_users
+    description: 'List of mysql database users'
+    type: array
+    value: ['root']   
+
+  - name: is_mysql_server_slave_configured
+    description: 'Set to true if the mysql server has a slave configured'
+    type: boolean
+    value: true
+
+  - name: mysql_administrative_users
+    description: 'List of mysql administrative users'
+    type: array
+    value: ['root']
+    sensitive: true
+
+  - name: mysql_users_allowed_modify_or_create
+    description: 'List of mysql users allows to modify or create data structures'
+    type: array
+    value: ['root'] 

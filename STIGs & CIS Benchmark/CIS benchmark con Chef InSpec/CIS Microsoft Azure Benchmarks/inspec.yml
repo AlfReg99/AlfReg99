@@ -1,0 +1,23 @@
+name: microsoft-azure-cis-foundations-baseline
+title: microsoft-azure-cis-foundations-baseline
+maintainer: MITRE SAF Team
+copyright: MITRE SAF Team
+copyright_email: saf@groups.mitre.org
+license: Apache-2.0
+summary: "Inspec Validation Profile for Microsoft Azure Foundations CIS"
+version: 1.1.1
+inspec_version: ">= 4.0"
+
+supports:
+  platform: azure
+
+depends:
+  - name: inspec-azure
+    url: https://github.com/inspec/inspec-azure/archive/v1.12.0.tar.gz
+
+inputs:
+  - name: my_resource_groups
+    desc: The list of resource groups you would like to scan
+    type: Array
+    value:
+      - test1

@@ -1,0 +1,8 @@
+name: MongoDB_3.X
+title: MongoDB Enterprise Advanced 3.X Based upon MongoDB 3.X Security Technical Implementation Guide
+maintainer: DISA DevSecOps Team
+copyright: Defense Information Systems Agency (DISA)
+license: Apache-2.0
+summary: InSpec testing for baseline compliance with the MongoDB 3.X STIG
+version: 1.0.0
+inspec_version: ">= 4.0"
