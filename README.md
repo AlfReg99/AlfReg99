@@ -6,19 +6,21 @@ Durante il processo di sviluppo della tesi sono stati utilizzati due tool di val
 
 #### CIS CAT Lite
 Il primo tool utilizzato è stato CIS Configuration Assessment Tool (CAT) Lite, sviluppato dal Center for Internet Security. È stata realizzata 
-una cartella apposita all'interno della quale sono stati inseriti tutta una serie di file PDF associati ai CIS Benchmarks relativi a differenti
+una cartella apposita, "PDF CIS benchmarks", all'interno della quale sono stati inseriti tutta una serie di file PDF associati ai CIS Benchmarks relativi a differenti
 sistemi target (es. Windows 10, MacOS, Linux Ubuntu).
 ###### REPORT CIS CAT Lite
 Con il lavoro di tesi svolto, il sistema target scelto per l'esecuzione del tool è stato Windows 10. All'interno di questa repository è stato 
-inserito l'intero report in formato HTML generato da CIS CAT Lite.
+inserito l'intero report in formato HTML generato da CIS CAT Lite. Il file relativo al report è "CIS_CAT_Lite_Report.html".
 
 #### Chef InSpec
 Il secondo tool utilizzato è stato Chef InSpec, di proprietà della Chef Software, Inc. Poichè Chef InSpec fa uso sia degli Security Technical Implementation Guides
-(STIGs) sia dei CIS Benchmarks, è stata realizzata una seconda cartella all'interno della quale sono stati inseriti tutta una serie di STIGs e di CIS Benchmark
+(STIGs) sia dei CIS Benchmarks, è stata realizzata una seconda cartella, "STIGs & CIS Benchmark", all'interno della quale sono stati inseriti tutta una serie di STIGs e di CIS Benchmark
 utilizzabili direttamente tramite Chef InSpec.
 ###### REPORT Chef InSpec
 Con il lavoro di tesi svolto, il sistema target scelto per l'esecuzione del tool è stato Windows 10. All'interno di questa repository è stato 
-inserito l'intero report sia in formato HTML sia in formato JSON generato da Chef InSpec.
+inserito l'intero report sia in formato HTML sia in formato JSON generato da Chef InSpec. I file relativi ai report sono rispettivamente "Chef_InSpec_Report.html" e 
+"Chef_InSpec_Report.json".
+
 
 ### Script
 Un ulteriore lavoro svolto è stata la realizzazione di uno script in linguaggio python. L'obiettivo di tale script è stato quello di prelevare,
@@ -41,7 +43,7 @@ di ogni CIS Benchmark con la Famiglia e con il Gruppo.
 
 ###### Tabella Excel Report
 Inoltre, il secondo obiettivo dello script è stato quello di storicizzare in maniera automatica tutti i dati all'interno di una tabella excel. All'interno di
-questa repository è stata inserita la tabella excel di cui abbiamo appena parlato. Il file relativo a tale tabella è "report.xlsx".
+questa repository è stata inserita la cartella "report" all'interno della quale è stata inserita la tabella excel di cui abbiamo appena parlato. Il file relativo a tale tabella è "report.xlsx".
 ###### Tabella Excel Mapping
 All'interno di questa repositori è stata inserita un'ulteriore tabella Excel contenente il mapping tra i controlli utilizzati da Chef InSpec con i CIS Benchmarks, i 
 CIS Controls ed i CIS Subcontrols del CIS. Questo mapping è stato realizzato prendendo in considerazione la tabella Excel generata automaticamente dallo script precedente.
