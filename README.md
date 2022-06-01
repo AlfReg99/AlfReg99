@@ -43,7 +43,7 @@ di ogni CIS Benchmark con la Famiglia e con il Gruppo.
 
 ###### Tabella Excel Report
 Inoltre, il secondo obiettivo dello script è stato quello di storicizzare in maniera automatica tutti i dati all'interno di una tabella excel. All'interno di
-questa repository è stata inserita la cartella "report" all'interno della quale è stata inserita la tabella excel di cui abbiamo appena parlato. Il file relativo a tale tabella è "report.xlsx".
+questa repository è stata inserita la cartella "results" all'interno della quale è stata inserita la tabella excel di cui abbiamo appena parlato. Il file relativo a tale tabella è "report.xlsx".
 ###### Tabella Excel Mapping
 All'interno di questa repositori è stata inserita un'ulteriore tabella Excel contenente il mapping tra i controlli utilizzati da Chef InSpec con i CIS Benchmarks, i 
 CIS Controls ed i CIS Subcontrols del CIS. Questo mapping è stato realizzato prendendo in considerazione la tabella Excel generata automaticamente dallo script precedente.
